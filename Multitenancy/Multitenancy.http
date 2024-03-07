@@ -1,6 +1,25 @@
-@Multitenancy_HostAddress = http://localhost:5231
+@Multitenancy_HostAddress = https://localhost:7196
+@host = https://localhost:7196
 
-GET {{Multitenancy_HostAddress}}/weatherforecast/
-Accept: application/json
+
+GET {{host}}/api/products
+tenant: jumia
+
+###
+
+GET {{host}}/api/products/1
+tenant: jumia
+
+###
+
+POST {{host}}/api/products/
+tenant: jumia
+Content-Type: application/json
+
+{
+  "name": "Product 2",
+  "description": "My second product",
+  "rate": 5
+}
 
 ###
