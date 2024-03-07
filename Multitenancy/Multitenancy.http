@@ -17,8 +17,8 @@ tenant: jumia
 Content-Type: application/json
 
 {
-  "name": "Product 2",
-  "description": "My second product",
+  "name": "Product 1",
+  "description": "My jumia first product",
   "rate": 5
 }
 
